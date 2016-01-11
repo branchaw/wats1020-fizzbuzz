@@ -4,7 +4,24 @@
   </head>
   <body>
     <h1>FizzBuzz Assignment</h1>
-    <p>View FizzBuzz output in your browser console. No output will display on this page.</p>
+    <p>You can view FizzBuzz output from 1-20 in your browser console, or on the page below.</p>
     <script type="text/javascript" src="fizzbuzz.js"></script>
+	 <br /> 
+	<script language="javascript" type="text/javascript">
+		for(i=1; i<=20; i++){
+			if(i % 3 === 0){
+				if(i % 5 === 0){
+				document.write("FizzBuzz<br />");
+				} else {
+				document.write("Fizz<br />");
+				}
+			} else if(i % 5 === 0){
+			document.write("Buzz<br />");
+			} else {
+			document.write(i);
+			document.write("<br />");
+		}
+	  }
+	 </script>
   </body>
 </html>
